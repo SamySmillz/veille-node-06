@@ -3,6 +3,7 @@
  for (elm of elmSauver)
  {
  elm.addEventListener('click', function(){
+ 	console.log("test");
  /* 
  console.log(this
  .parentNode
@@ -14,6 +15,7 @@
  let nom = laLigne.children[1].innerHTML
  let prenom = laLigne.children[2].innerHTML
  let telephone = laLigne.children[3].innerHTML
+ console.log(laLigne);
 
 let elmForm = document.getElementById('mon_formulaire')
  console.log(elmForm.tagName)

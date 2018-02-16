@@ -64,3 +64,6 @@ header {
 header section {
   text-align: center;
 }
+.mon_formulaire {
+  display: none;
+}
