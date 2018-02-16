@@ -54,37 +54,37 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 })
 
 
-app.post('/modifier', (req, res) => {
-console.log('req.body' + req.body)
-	 if (req.body['_id'] != __________){ 
+// app.post('/modifier', (req, res) => {
+// console.log('req.body' + req.body)
+// 	 if (req.body['_id'] != __________){ 
 
-	 console.log('sauvegarde') 
+// 	 console.log('sauvegarde') 
 
-	 var oModif = {
-		 "_id": ObjectID(req.body['_id']), 
-		 nom: req.body._____,
-		 prenom:req.body.______, 
-		 telephone:req.body._______
-	 }
+// 	 var oModif = {
+// 		 "_id": ObjectID(req.body['_id']), 
+// 		 nom: req.body._____,
+// 		 prenom:req.body.______, 
+// 		 telephone:req.body._______
+// 	 }
 
-	 var util = require("util");
-	 console.log('util = ' + util.inspect(oModif));
+// 	 var util = require("util");
+// 	 console.log('util = ' + util.inspect(oModif));
 	 
-	}
-	else{
-		 console.log('insert')
-		 console.log(req.body)
-		 var oModif = {
-		 nom: req.body.______,
-		 prenom:req.body.______, 
-		 telephone:req.body._______
-	}
-}
- db.collection('adresse').save(oModif, (err, result) => {
-	 if (err) return console.log(err)
-	 console.log('sauvegarder dans la BD')
-	 res.redirect('/list')
- })
+// 	}
+// 	else{
+// 		 console.log('insert')
+// 		 console.log(req.body)
+// 		 var oModif = {
+// 		 nom: req.body.______,
+// 		 prenom:req.body.______, 
+// 		 telephone:req.body._______
+// 	}
+// }
+//  db.collection('adresse').save(oModif, (err, result) => {
+// 	 if (err) return console.log(err)
+// 	 console.log('sauvegarder dans la BD')
+// 	 res.redirect('/list')
+//  })
 ////////////////////////////connexion a MangoDB et au serveur node.js
 
 let db // variable qui contiendra le lien sur la BD
