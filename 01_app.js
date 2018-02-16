@@ -51,7 +51,7 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 		console.log(ordre);
 		res.render('gabarit.ejs', {adresses: resultat, cle, ordre})
 	})
-})
+}) 
 
 
 // app.post('/modifier', (req, res) => {
@@ -86,6 +86,12 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 // 	 res.redirect('/list')
 //  })
 ////////////////////////////connexion a MangoDB et au serveur node.js
+
+
+
+
+
+
 
 let db // variable qui contiendra le lien sur la BD
 
